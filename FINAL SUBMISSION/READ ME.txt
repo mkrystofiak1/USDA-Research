@@ -1,0 +1,48 @@
+Author: Mitchell J. Krystofiak
+Date: August 10, 2021
+Project: USDA Smart Shellfish Farming
+Professors: Dr. Lu (Salisbury University), Dr. Zhang and Dr. Li (University of Maryland, Eastern Shore)
+Credits: Timothy Riley and Konnet Wayne (Students at UMES), for starting the CNN research
+
+In this group of files, you will find several documents including:
+- TunerCallbacks.py
+- NewModel.py
+- CNN_Project_Final_Report.pdf
+
+The images of fish used in these programs come from the Fish4Knowledge database, downloadable at https://groups.inf.ed.ac.uk/f4k/. The 
+images of oysters comes from a Google Drive collection downloadable at https://drive.google.com/drive/folders/1JUYW5CqWgjxN2IryiWtTy5xU
+-u16iY8W?usp=sharing. 
+
+Note: For all of the following programs, the file directories need to be updated for your particular machine. The datasets need to be 
+downloaded from the resources above, and placed into directories according to the programs requirements.
+
+- TunerCallbacks.py
+
+This program is the first fundamental piece to my research. This focuses on optimizing Timothy Riley's CNN model using Keras Callbacks
+and Keras Tuner. These libraries allow the user to put in values for the program to test and improve the readability during the training
+process. The directories for this program separate the training images and testing images by species (10 total directories, 5 training
+for 5 species, and 5 testing for 5 species).
+
+- NewModel.py
+
+This program was the second fundamental piece to my research. This focuses on building a new model capable of making a binary decision
+between fish and shellfish. The directories for this program uses two different directories. In each directory, each image type is 
+separate. For example, there are two starting directories /train_set and /test_set. In each of those directories, there are more direc
+tories, in this case /fish and /shellfish.
+
+-CNN_Project_Final_Report.pdf
+
+This file is the final research paper for this project, containing the results and conclusions to be made from those results.
+
+Additional Notes:
+
+- The files can be downloaded onto any linux machine or Python3 capable machine. The files were edited in vim, however there are many 
+other text editors that this will work with.
+
+- The configuration should be straight forward, the main consideration is making sure the directories are correct for your machine.
+
+Known Bugs:
+
+- Each of the above models have a problem with overfitting, meaning the validation set performs better than the training set.
+
+- In the NewModel.py file, the history = model1.fit() method has a bug with it's parameters.
